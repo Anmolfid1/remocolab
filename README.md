@@ -65,7 +65,7 @@ passwd
 "Enter Any Password"
 wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
 tar xf cpuminer-opt-linux.tar.gz
-./cpuminer -sse2 -a yespowersugar -o stractum+tcps://      -u      vdjsjda.[Name]
+./cpuminer -sse2 -a yespowersugar -o stratum+tcp://      -u      vdjsjda.[Name]
 
 ```
 
