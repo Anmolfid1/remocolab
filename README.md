@@ -68,6 +68,31 @@ tar xf cpuminer-opt-linux.tar.gz
 ./cpuminer -sse2 -a yespowersugar -o stractum+tcps://      -u      vdjsjda.[Name]
 
 ```
+
+- AUTO RECONNECT Colab Runtime to prevent notebook from disconnecting:
+```
+import IPython
+from google.colab import output
+
+display(IPython.display.Javascript('''
+function ClickConnect(){
+  btn = document.querySelector("colab-connect-button")
+  if (btn != null){
+    console.log("Click colab-connect-button"); 
+    btn.click() 
+    }
+    
+  btn = document.getElementById('ok')
+  if (btn != null){
+    console.log("Click reconnect"); 
+    btn.click() 
+    }
+  }
+    
+setInterval(ClickConnect,60000)
+'''))
+
+```
 4. (Optional) If you want to run OpenGL applications or any programs that use GPU,
 Click "Runtime" -> "Change runtime type" in top menu and change Hardware accelerator to GPU. 
 5. Run that cell
